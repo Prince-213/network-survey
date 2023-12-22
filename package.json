@@ -41,7 +41,6 @@
 		"prettier-plugin-tailwindcss": "^0.5.9",
 		"svelte": "^4.2.7",
 		"svelte-check": "^3.6.0",
-		"svelte-fusioncharts": "^1.0.0",
 		"tailwindcss": "^3.3.6",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
@@ -52,10 +51,12 @@
 	"dependencies": {
 		"@supabase/supabase-js": "^2.39.1",
 		"apexcharts": "^3.45.0",
+		"bufferutil": "^4.0.8",
 		"d3": "^7.8.5",
 		"flowbite-datepicker": "^1.2.6",
 		"fusioncharts": "^3.21.1",
 		"lucide-svelte": "^0.299.0",
-		"month-utils": "^0.8.2"
+		"month-utils": "^0.8.2",
+		"utf-8-validate": "^6.0.3"
 	}
 }
