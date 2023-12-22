@@ -1,0 +1,11 @@
+import { c as create_ssr_component, b as add_attribute } from "./ssr.js";
+import { twMerge } from "tailwind-merge";
+const ListPlaceholder = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { divClass = "p-4 space-y-4 max-w-md rounded border border-gray-200 divide-y divide-gray-200 shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700" } = $$props;
+  if ($$props.divClass === void 0 && $$bindings.divClass && divClass !== void 0)
+    $$bindings.divClass(divClass);
+  return `<div role="status"${add_attribute("class", twMerge(divClass, $$props.class), 0)}><div class="flex justify-between items-center" data-svelte-h="svelte-1h860s4"><div><div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div> <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div></div> <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div></div> <div class="flex justify-between items-center pt-4" data-svelte-h="svelte-26qi2d"><div><div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div> <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div></div> <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div></div> <div class="flex justify-between items-center pt-4" data-svelte-h="svelte-26qi2d"><div><div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div> <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div></div> <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div></div> <div class="flex justify-between items-center pt-4" data-svelte-h="svelte-26qi2d"><div><div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div> <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div></div> <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div></div> <div class="flex justify-between items-center pt-4" data-svelte-h="svelte-26qi2d"><div><div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div> <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div></div> <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div></div> <span class="sr-only" data-svelte-h="svelte-1wtojot">Loading...</span></div> `;
+});
+export {
+  ListPlaceholder as L
+};
